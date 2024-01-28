@@ -6357,7 +6357,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #784cfb !important;
+  background-color: #784cfb;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,

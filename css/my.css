@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
+#banner-home {
+    background: rgb(120,76,251);
+    background: linear-gradient(183deg, rgba(120,76,251,1) 0%, rgba(35,21,78,1) 100%);  }
+
+.foto-banner-div {
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+#foto-banner:hover {
+    transform: scale(0.9);
+}
+
+#foto-banner {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 20px 20px 20px white;
+
+}
+
 .area{
     background: #4e54c8;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
