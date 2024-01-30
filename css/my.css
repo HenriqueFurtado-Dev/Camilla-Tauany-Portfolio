@@ -180,3 +180,21 @@
     flex-direction: column;
     height: 550px;
 }
+
+@media (max-width: 900px) {
+    .profissional {
+        height: auto;
+    }
+    .foto-banner-div {
+        margin: 10px auto;
+        width: 300px;
+        height: 300px;
+    }
+    #foto-banner {
+        width: 300px;
+        height: 300px;
+    }
+    #btn-cv {
+        margin: 0;
+    }
+}
