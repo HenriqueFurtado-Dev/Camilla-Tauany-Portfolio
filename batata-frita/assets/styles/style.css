@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Tipografia e cores padrão */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Banner com imagem de fundo */
+  .banner {
+    background: url("../images/banner.jpg") no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Overlay para melhor contraste */
+    z-index: 1;
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  .banner .author {
+    font-size: 1em;
+  }
+  
+  /* Estilo do main */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Cabeçalhos com cor personalizada */
+  h1, h2 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  h2 {
+    color: #06689d;
+  }
+  
+  /* Seções de conteúdo */
+  .introduction, .ingredients, .steps, .video, .quiz {
+    margin-bottom: 20px;
+  }
+
+  .introduction .batata-frita {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+
+  }
+  
+  .batata-frita:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  
+  
+  /* Listas */
+  ul, ol {
+    margin-left: 20px;
+  }
+  
+  /* Estilo para o iframe do vídeo */
+  .video iframe {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  /* Seção de Quiz */
+  .quiz {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fcf27d;
+  }
+  
+  .quiz h2 {
+    margin-bottom: 15px;
+  }
+  
+  .quiz .question {
+    margin-bottom: 15px;
+  }
+  
+  .quiz button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f37140;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .quiz button:hover {
+    background-color: #faa754;
+  }
+  
+  /* Footer com cor de fundo personalizada */
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #014466;
+    color: #fff;
+  }
+  
+  /* Responsividade: ajustes para telas menores */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    
+    main {
+      padding: 15px;
+    }
+  }
+  
